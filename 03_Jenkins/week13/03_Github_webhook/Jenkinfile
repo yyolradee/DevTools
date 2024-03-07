@@ -30,18 +30,6 @@ pipeline {
             }
         }
 
-        // stage('Push to Docker Hub') {
-        //     steps {
-        //         script {
-                    
-        //             // Login to Docker Hub
-        //             sh 'echo $DOCKER_CREDENTIALS_PSW | docker login --username $DOCKER_CREDENTIALS_USR --password-stdin'
-        //             // Push the image
-        //             sh 'docker push $DOCKER_IMAGE'
-        //         }
-        //     }
-        // }
-
         stage('Clear Docker Components') {
             steps {
                 script {
